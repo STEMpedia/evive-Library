@@ -5,7 +5,7 @@ experimental setups with ease and by advanced users like researchers, profession
 Explore more about evive and its related projects on : [https://thestempedia.com]
 
 evive comes with a preloaded firmware that provides a wide range of features like motor control, servo control, oscilloscope, 
-function generator, pin state monitor and many more. A description about evive firmware is mentioned below..
+function generator, pin state monitor and many more. A description about evive firmware is mentioned below.
 
 # evive Firmware version 1.0.0
 This firmware is developed for evive. It enables the menu based visual interface for Arduino programs. A brief description of firmware 
