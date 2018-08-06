@@ -1,5 +1,5 @@
  /*
-  * Version 1.1.0
+  * Version 2.0.1
   * This firmware is developed for evive [https://thestempedia.com].
   * This is licensed under GNU GPL V3 [http://www.gnu.org/licenses/gpl.txt].
   * Written by Dhrupal R Shah for evive platform, Agilo Research.
