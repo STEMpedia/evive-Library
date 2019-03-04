@@ -16,7 +16,7 @@ int freeRam ()
 void eviveFirmware(void)
 {
 	exitmenu = 1;
-	Serial.begin(115200);
+	Serial.begin(250000);
 	tft_init(INITR_BLACKTAB);
   	while (1)
 	{
