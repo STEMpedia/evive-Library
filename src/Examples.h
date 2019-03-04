@@ -3,10 +3,10 @@
 
 //IMPORTANT: uncomment the required Example(s). Then in Examples.cpp, go to the corresponding "setup" and "loop" functions to write the program (definition).
 #define EXAMPLE_1 	"Blink Analog Input"
-//#define EXAMPLE_2 "NA"
-#define EXAMPLE_3 	"TFT Display (Pot1)"
-#define EXAMPLE_4 	"Probe V Sense"
-#define EXAMPLE_5 	"TFT Serial Monitor (Pot1)"
+#define EXAMPLE_2   "TFT Display (Pot1)"
+#define EXAMPLE_3 	"Probe V Sense"
+#define EXAMPLE_4 	"TFT Serial Monitor(Pot1)"
+#define EXAMPLE_5 	"Bluetooth Mobile robot"
 
 
 #include "evive.h"
