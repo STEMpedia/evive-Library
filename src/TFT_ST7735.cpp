@@ -469,6 +469,25 @@ void TFT_ST7735::drawCircle(int16_t x0, int16_t y0, int16_t r, uint16_t color)
   }
 }
 
+void TFT_ST7735::drawMatrix(int16_t sizeMatrix, int16_t x, int16_t y, uint16_t color, uint16_t color2, String dataString){
+	int rowMatrix = 0;
+	int colMatrix = 0;
+	for (int i=0; i < 320; i++){
+		if(dataString.substring(i, i+1) == "1"){
+			fillRect(x+(colMatrix)*sizeMatrix, y+(rowMatrix)*sizeMatrix, sizeMatrix, sizeMatrix, color);
+		}
+		else {
+			fillRect(x+(colMatrix)*sizeMatrix, y+(rowMatrix)*sizeMatrix, sizeMatrix, sizeMatrix, color2);
+		}
+		if (colMatrix == 19) {
+			rowMatrix++;
+			colMatrix = 0;
+		}
+		else {
+			colMatrix++;
+		}
+	}
+}
 /***************************************************************************************
 ** Function name:           drawCircleHelper
 ** Description:             Support function for circle drawing
