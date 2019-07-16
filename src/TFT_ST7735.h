@@ -263,7 +263,7 @@ class TFT_ST7735 : public Print {
  public:
 
   TFT_ST7735(int16_t _W = ST7735_TFTWIDTH, int16_t _H = ST7735_TFTHEIGHT);
-
+  void drawMatrix(int16_t sizeMatrix, int16_t x, int16_t y, uint16_t color, uint16_t color2, String dataString);
   void     init(uint8_t), begin(void), // Same - begin included for backwards compatibility
 
            drawPixel(uint16_t x, uint16_t y, uint16_t color),
