@@ -307,6 +307,7 @@ class TFT_ST7735 : public Print {
            fillTriangle(int16_t x0, int16_t y0, int16_t x1, int16_t y1, int16_t x2, int16_t y2, uint16_t color),
 
            drawBitmap(int16_t x, int16_t y, const uint8_t *bitmap, int16_t w, int16_t h, uint16_t color),
+           drawBitmap(int16_t x, int16_t y, const uint8_t *bitmap, int16_t w, int16_t h, uint16_t color,uint16_t bgColor),
 
            setCursor(int16_t x, int16_t y),
            setCursor(int16_t x, int16_t y, uint8_t font),

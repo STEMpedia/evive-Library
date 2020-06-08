@@ -821,6 +821,29 @@ void TFT_ST7735::drawBitmap(int16_t x, int16_t y, const uint8_t *bitmap, int16_t
 }
 
 /***************************************************************************************
+** Function name:           drawBitmap
+** Description:             Draw an image stored in an array on the TFT with bakground color
+***************************************************************************************/
+void TFT_ST7735::drawBitmap(int16_t x, int16_t y, const uint8_t *bitmap, int16_t w, int16_t h, uint16_t color,uint16_t bgColor)
+{
+
+  int16_t i, j, byteWidth = (w + 7) / 8;
+
+  for (j = 0; j < h; j++) {
+    for (i = 0; i < w; i++ ) {
+      if (pgm_read_byte(bitmap + j * byteWidth + i / 8) & (128 >> (i & 7))) {
+        drawPixel(x + i, y + j, color);
+      }
+      else
+      {
+        drawPixel(x + i, y + j, bgColor);
+      }
+      
+    }
+  }
+}
+
+/***************************************************************************************
 ** Function name:           setCursor
 ** Description:             Set the text cursor x,y position
 ***************************************************************************************/
